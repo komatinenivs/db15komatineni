@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}. When you #{title} the #{title} the #{title} will ] #{title} you.
+  button(type="button", class="btn  btn-secondary" onclick="update()") Press Me for the contents
+  p
+
+  div(id ="target") Display
+
+  script.
+    var client_count=0;
+    function update(){
+      client_count+=1;
+      
+      document.getElementById("target").innerHTML="Value Now "+client_count  ;
+      }
