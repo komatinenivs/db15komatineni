@@ -3,7 +3,7 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
-  - var results = [{flavour:"Vennila", size: "small", price: 40},{flavour:"Vennila", size: "medium", price: 50},{flavour:"Blackcurrent", size: "large", price: 60}]
+  - var results = [{flavour:"Vennila", size: "small", price: 40},{flavour:"Strawberrry", size: "medium", price: 50},{flavour:"Blackcurrent", size: "large", price: 60}]
    div(class="container-fluid")
     div(class="row" )
      each res,index in results
